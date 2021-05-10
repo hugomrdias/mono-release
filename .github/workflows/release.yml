@@ -35,7 +35,7 @@ jobs:
               };
             }
             nodePaths = Array.from(nodePaths);
-            if(nodePath.length === 0){
+            if(nodePaths.length === 0){
               console.log(`::warning::No changes found, release will be skipped.`)
             }
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
