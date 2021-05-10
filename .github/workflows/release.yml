@@ -35,10 +35,12 @@ jobs:
               };
             }
             nodePaths = Array.from(nodePaths);
+            console.log(nodePath)
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-pr:
     runs-on: ubuntu-latest
     needs: changeFinder
+    if: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
     strategy:
       fail-fast: false
       matrix:
