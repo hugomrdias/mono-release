@@ -35,8 +35,11 @@ jobs:
               };
             }
             nodePaths = Array.from(nodePaths);
-            console.log(nodePaths)
+            if(nodePath.length === 0){
+              console.log(`::warning::No changes found, release will be skipped.`)
+            }
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
+
   release-pr:
     runs-on: ubuntu-latest
     needs: changeFinder
