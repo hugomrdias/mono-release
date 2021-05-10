@@ -7,8 +7,7 @@
   "author": "Hugo Dias <hugomrdias@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "one",
-    "two"
+    "packages/*"
   ],
   "devDependencies": {
     "release-please": "^11.11.0"
