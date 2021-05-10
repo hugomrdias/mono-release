@@ -1,5 +1,4 @@
 {
-  "plugins": ["node-workspace"],
   "release-as": "2.0.0",
   "packages": {
     "one": {
