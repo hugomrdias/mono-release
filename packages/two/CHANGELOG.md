@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/hugomrdias/mono-release/compare/two-v1.1.0...two-v1.1.1) (2021-05-10)
+
+
+### Bug Fixes
+
+* **two:** skip publish ([bce6c42](https://www.github.com/hugomrdias/mono-release/commit/bce6c42988041e95c30718f34f15a8e5e55ecbea))
+* **two:** sssss ([1a120d2](https://www.github.com/hugomrdias/mono-release/commit/1a120d2382581a5d0604905f156c5eef3ec47a8f))
+
 ## [1.1.0](https://www.github.com/hugomrdias/mono-release/compare/two-v1.0.0...two-v1.1.0) (2021-05-10)
 
 
