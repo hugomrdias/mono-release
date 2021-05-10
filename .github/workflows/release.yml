@@ -76,18 +76,13 @@ jobs:
           monorepo-tags: true
           package-name: ${{ matrix.package }}
           command: github-release
-      # - uses: actions/checkout@v2
-      #   if: ${{ steps.tag-release.outputs.release_created }}
-      # - uses: actions/setup-node@v1
-      #   if: ${{ steps.tag-release.outputs.release_created }}
-      #   with:
-      #     node-version: 14
-      #     registry-url: 'https://external-dot-oss-automation.appspot.com/'
-      # - name: publish
-      #   if: ${{ steps.tag-release.outputs.release_created }}
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      #   run: |
-      #     cd packages/${{ matrix.package }}
-      #     npm install
-      #     npm publish --access=public
+      - uses: actions/checkout@v2
+        if: ${{ steps.tag-release.outputs.release_created }}
+      - name: publish
+        if: ${{ steps.tag-release.outputs.release_created }} && ${{ matrix.package == 'one'}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: |
+          cd packages/${{ matrix.package }}
+          npm install
+          npm publish --access=public
