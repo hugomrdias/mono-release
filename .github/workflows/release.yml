@@ -35,7 +35,7 @@ jobs:
               };
             }
             nodePaths = Array.from(nodePaths);
-            console.log(nodePath)
+            console.log(nodePaths)
             console.log(`::set-output name=nodePaths::${JSON.stringify(nodePaths)}`);
   release-pr:
     runs-on: ubuntu-latest
