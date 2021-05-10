@@ -1,3 +1,3 @@
 export function one() {
-  return false
+  return 'one'
 }
