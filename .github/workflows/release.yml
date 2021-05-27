@@ -35,7 +35,7 @@ jobs:
               };
             }
             nodePaths = Array.from(nodePaths);
-            console.log(${JSON.stringify(nodePaths)})
+            console.log(`${JSON.stringify(nodePaths)}`)
             if(nodePaths.length === 0){
               console.log(`::warning::No changes found, release will be skipped.`)
             }
