@@ -80,8 +80,9 @@ jobs:
           command: github-release
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.release_created }}
-      - name: Debug
-        run: echo "${{ startsWith(steps.tag-release.outputs.tag_name, 'one') }}"
-      - name: Deploy API
-        if: ${{ steps.tag-release.outputs.release_created && matrix.package == 'two' }}
-        run: echo "deploy"
+      - name: ONE
+        if: ${{ steps.tag-release.outputs.release_created && startsWith(steps.tag-release.outputs.tag_name, 'one') }}
+        run: echo "one"
+      - name: TWO
+        if: ${{ steps.tag-release.outputs.release_created && startsWith(steps.tag-release.outputs.tag_name, 'two') }}
+        run: echo "two"
