@@ -79,14 +79,8 @@ jobs:
           command: github-release
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.release_created }}
-      - name: NPM Publish Client
-        if: ${{ steps.tag-release.outputs.release_created && matrix.package == 'one' }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: |
-          cd packages/${{ matrix.package }}
-          npm install
-          npm publish --access=public
+      - name: Debug
+        run: echo "${{ steps.tag-release.outputs.tag_name }}"
       - name: Deploy API
         if: ${{ steps.tag-release.outputs.release_created && matrix.package == 'two' }}
         run: echo "deploy"
