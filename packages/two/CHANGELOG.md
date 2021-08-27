@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/hugomrdias/mono-release/compare/two-v1.2.0...two-v1.3.0) (2021-08-27)
+
+
+### Features
+
+* **one,two:** both without double command ([c0eb7b9](https://www.github.com/hugomrdias/mono-release/commit/c0eb7b91e8a4a95f41de9e06cff3dd1911feb72b))
+
 ## [1.2.0](https://www.github.com/hugomrdias/mono-release/compare/two-v1.1.2...two-v1.2.0) (2021-08-27)
 
 
