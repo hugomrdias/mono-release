@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
           package-name: one
-          # monorepo-tags: true
+          monorepo-tags: true
           command: release-pr
   release:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
           path: packages/one
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          # monorepo-tags: true
+          monorepo-tags: true
           package-name: one
           command: github-release
       - uses: actions/checkout@v2
