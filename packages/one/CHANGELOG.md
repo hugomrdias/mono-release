@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/hugomrdias/mono-release/compare/one-v1.0.4...one-v1.1.0) (2021-08-27)
+
+
+### Features
+
+* **one,two:** add both cis ([54be2d3](https://www.github.com/hugomrdias/mono-release/commit/54be2d30c5a4fd1825182273d21f57275b2a5d15))
+
+
+### Bug Fixes
+
+* **one:** just one ([b272ae6](https://www.github.com/hugomrdias/mono-release/commit/b272ae6bea4293b92101c4c99845212017e8896c))
+* **one:** test new one release ([0d926dd](https://www.github.com/hugomrdias/mono-release/commit/0d926dd7175f71359567f90bfe1da9a63eec7c06))
+
 ### [1.0.4](https://www.github.com/hugomrdias/mono-release/compare/one-v1.0.3...one-v1.0.4) (2021-05-27)
 
 
