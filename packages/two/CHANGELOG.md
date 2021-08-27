@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://www.github.com/hugomrdias/mono-release/compare/two-v1.3.0...two-v1.3.1) (2021-08-27)
+
+
+### Bug Fixes
+
+* **two:** dddd ([51ebd6a](https://www.github.com/hugomrdias/mono-release/commit/51ebd6a3ece73e950fb93568b34fbbdc408007a9))
+
 ## [1.3.0](https://www.github.com/hugomrdias/mono-release/compare/two-v1.2.0...two-v1.3.0) (2021-08-27)
 
 
