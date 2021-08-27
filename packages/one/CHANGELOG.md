@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://www.github.com/hugomrdias/mono-release/compare/one-v1.2.0...one-v1.2.1) (2021-08-27)
+
+
+### Bug Fixes
+
+* **one:** try manifest ([4a24caa](https://www.github.com/hugomrdias/mono-release/commit/4a24caabc279b177e796cfe51e2e5509b1aaa520))
+
 ## [1.2.0](https://www.github.com/hugomrdias/mono-release/compare/one-v1.1.0...one-v1.2.0) (2021-08-27)
 
 
