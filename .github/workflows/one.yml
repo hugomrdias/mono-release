@@ -7,18 +7,18 @@ on:
       - '.github/workflows/one.yml'
 name: release one
 jobs:
-  release-pr:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: google-github-actions/release-please-action@v2
-        id: release-please
-        with:
-          path: packages/one
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: node
-          package-name: one
-          monorepo-tags: true
-          command: release-pr
+  # release-pr:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: google-github-actions/release-please-action@v2
+  #       id: release-please
+  #       with:
+  #         path: packages/one
+  #         token: ${{ secrets.GITHUB_TOKEN }}
+  #         release-type: node
+  #         package-name: one
+  #         monorepo-tags: true
+  #         command: release-pr
   release:
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +30,7 @@ jobs:
           release-type: node
           monorepo-tags: true
           package-name: one
-          command: github-release
+          # command: github-release
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.release_created }}
       - name: ONE
