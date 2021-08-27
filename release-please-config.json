@@ -1,4 +1,6 @@
 {
+  "bootstrap-sha": "9a3712871cd653ac78ee810024663aaa7214532f",
+  "last-release-sha": "9a3712871cd653ac78ee810024663aaa7214532f",
   "packages": {
     "packages/one": {}
   }
