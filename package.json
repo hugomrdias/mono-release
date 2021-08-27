@@ -10,6 +10,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "release-please": "^11.11.0"
+    "release-please": "^11.22.0"
   }
 }
