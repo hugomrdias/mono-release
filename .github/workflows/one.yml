@@ -34,8 +34,5 @@ jobs:
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.release_created }}
       - name: ONE
-        if: ${{ steps.tag-release.outputs.release_created && startsWith(steps.tag-release.outputs.tag_name, 'one') }}
+        if: ${{ steps.tag-release.outputs.release_created }}
         run: echo "one"
-      - name: TWO
-        if: ${{ steps.tag-release.outputs.release_created && startsWith(steps.tag-release.outputs.tag_name, 'two') }}
-        run: echo "two"
