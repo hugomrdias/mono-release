@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.4](https://www.github.com/hugomrdias/mono-release/compare/one-v1.0.3...one-v1.0.4) (2021-05-27)
+
+
+### Bug Fixes
+
+* new one releasess ([a5d5127](https://www.github.com/hugomrdias/mono-release/commit/a5d5127ac3ab786ca8921c59ef3cd57e35021a7d))
+
 ### [1.0.3](https://www.github.com/hugomrdias/mono-release/compare/one-v1.0.2...one-v1.0.3) (2021-05-27)
 
 
