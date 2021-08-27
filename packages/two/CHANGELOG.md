@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.1.3](https://www.github.com/hugomrdias/mono-release/compare/two-v1.1.2...two-v1.1.3) (2021-08-27)
+
+
+### Bug Fixes
+
+* new double release ([75c8e71](https://www.github.com/hugomrdias/mono-release/commit/75c8e71f6cf7de4cb3db7b1286e8777b07c8ce50))
+* **two:** mute two ([7add4a8](https://www.github.com/hugomrdias/mono-release/commit/7add4a8f376d067bfa51163c95640bba90b823b5))
+
 ### [1.1.2](https://www.github.com/hugomrdias/mono-release/compare/two-v1.1.1...two-v1.1.2) (2021-05-27)
 
 
