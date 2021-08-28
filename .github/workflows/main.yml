@@ -4,18 +4,6 @@ on:
       - master
 name: main
 jobs:
-  # release-pr:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: google-github-actions/release-please-action@v2
-  #       id: release-please
-  #       with:
-  #         path: packages/one
-  #         token: ${{ secrets.GITHUB_TOKEN }}
-  #         release-type: node
-  #         package-name: one
-  #         monorepo-tags: true
-  #         command: release-pr
   release:
     runs-on: ubuntu-latest
     steps:
@@ -25,18 +13,28 @@ jobs:
           path: packages/one
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          # monorepo-tags: true
-          # package-name: one
           command: manifest
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.releases_created }}
-      - name: Dump steps context
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps.tag-release) }}
-        run: echo "$STEPS_CONTEXT"
       - name: ONE
-        if: ${{ steps.tag-release.outputs.one--release_created }}
+        if: ${{ steps.tag-release.outputs.packages/one--release_created }}
         run: echo "one"
       - name: TWO
-        if: ${{ steps.tag-release.outputs.two--release_created }}
+        if: ${{ steps.tag-release.outputs.packages/two--release_created }}
         run: echo "two"
+# "outputs": {
+#     "releases_created": "true",
+#     "packages/one--release_created": "true",
+#     "packages/one--major": "1",
+#     "packages/one--minor": "2",
+#     "packages/one--patch": "2",
+#     "packages/one--sha": "fe5efccaf5c3d11c18f5a357e848276ec6cc1180",
+#     "packages/one--version": "1.2.2",
+#     "packages/one--pr": "27",
+#     "packages/one--html_url": "https://github.com/hugomrdias/mono-release/releases/tag/one-v1.2.2",
+#     "packages/one--name": "one one-v1.2.2",
+#     "packages/one--tag_name": "one-v1.2.2",
+#     "packages/one--upload_url": "https://uploads.github.com/repos/hugomrdias/mono-release/releases/48621032/assets{?name,label}",
+#     "packages/one--draft": "false",
+#     "packages/one--body": "\n\n### Bug Fixes\n\n* **one:** ddd ([56625f7](https://www.github.com/hugomrdias/mono-release/commit/56625f7922d6dd3a95eb703629565eeeacdcdec2))\n"
+#   },
