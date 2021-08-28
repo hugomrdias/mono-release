@@ -2,10 +2,7 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'packages/two/**'
-      - '.github/workflows/two.yml'
-name: release two
+name: main
 jobs:
   # release-pr:
   #   runs-on: ubuntu-latest
@@ -13,10 +10,10 @@ jobs:
   #     - uses: google-github-actions/release-please-action@v2
   #       id: release-please
   #       with:
-  #         path: packages/two
+  #         path: packages/one
   #         token: ${{ secrets.GITHUB_TOKEN }}
   #         release-type: node
-  #         package-name: two
+  #         package-name: one
   #         monorepo-tags: true
   #         command: release-pr
   release:
@@ -25,14 +22,17 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: tag-release
         with:
-          path: packages/two
+          path: packages/one
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          monorepo-tags: true
-          package-name: two
-          # command: github-release
+          # monorepo-tags: true
+          # package-name: one
+          command: manifest
       - uses: actions/checkout@v2
-        if: ${{ steps.tag-release.outputs.release_created }}
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - name: ONE
+        if: ${{ steps.tag-release.outputs.one--release_created }}
+        run: echo "one"
       - name: TWO
-        if: ${{ steps.tag-release.outputs.release_created }}
+        if: ${{ steps.tag-release.outputs.two--release_created }}
         run: echo "two"
