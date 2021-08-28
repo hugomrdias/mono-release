@@ -30,6 +30,10 @@ jobs:
           command: manifest
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.releases_created }}
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps.tag-release) }}
+        run: echo "$STEPS_CONTEXT"
       - name: ONE
         if: ${{ steps.tag-release.outputs.one--release_created }}
         run: echo "one"
