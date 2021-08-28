@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/hugomrdias/mono-release/compare/one-v1.2.2...one-v1.3.0) (2021-08-28)
+
+
+### Features
+
+* **one,two:** ssssssssssssssss ([7ca64e9](https://www.github.com/hugomrdias/mono-release/commit/7ca64e9b5226a729e377c59136c102377d471c64))
+
+
+### Bug Fixes
+
+* **one:** fix symbols ([8ad7454](https://www.github.com/hugomrdias/mono-release/commit/8ad74544da1191e442e7e06fe0d085bcc9b04fa9))
+
 ### [1.2.2](https://www.github.com/hugomrdias/mono-release/compare/one-v1.2.1...one-v1.2.2) (2021-08-28)
 
 
