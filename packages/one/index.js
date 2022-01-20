@@ -1,3 +1,3 @@
 export function one() {
-  return 'change one dbeug'
+  return 'change one'
 }
