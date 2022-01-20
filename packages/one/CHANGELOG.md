@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://github.com/hugomrdias/mono-release/compare/one-v1.3.0...one-v1.3.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* separate PRs start with one ([8fe7b80](https://github.com/hugomrdias/mono-release/commit/8fe7b80824fde07dfd8842e957c29e11ef61bfdf))
+
 ## [1.3.0](https://www.github.com/hugomrdias/mono-release/compare/one-v1.2.2...one-v1.3.0) (2021-08-28)
 
 
