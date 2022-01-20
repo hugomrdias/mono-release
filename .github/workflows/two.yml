@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'packages/two/**'
+      - '.github/workflows/two.yml'
+name: release one
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: tag-release
+        with:
+          path: packages/two
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          monorepo-tags: true
+          package-name: two
+      - uses: actions/checkout@v2
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - name: Two
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        run: echo "two"
