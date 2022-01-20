@@ -16,7 +16,7 @@ jobs:
           path: packages/one
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          # monorepo-tags: true
+          monorepo-tags: true
           package-name: one
           # command: github-release
       - uses: actions/checkout@v2
