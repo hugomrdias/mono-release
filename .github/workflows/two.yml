@@ -5,7 +5,7 @@ on:
     paths:
       - 'packages/two/**'
       - '.github/workflows/two.yml'
-name: release one
+name: release two
 jobs:
   release:
     runs-on: ubuntu-latest
