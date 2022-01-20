@@ -1,4 +1,5 @@
 {
+  "separate-pull-requests": false,
   "packages": {
     "packages/one": {},
     "packages/two": {}
