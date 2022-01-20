@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.2](https://github.com/hugomrdias/mono-release/compare/one-v1.4.1...one-v1.4.2) (2022-01-20)
+
+
+### Bug Fixes
+
+* **one:** testing ([abd59a5](https://github.com/hugomrdias/mono-release/commit/abd59a58cdaf9495443093f162f355cdac101df0))
+
 ### [1.4.1](https://github.com/hugomrdias/mono-release/compare/one-v1.4.0...one-v1.4.1) (2022-01-20)
 
 
