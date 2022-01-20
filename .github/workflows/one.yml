@@ -18,9 +18,8 @@ jobs:
           release-type: node
           monorepo-tags: true
           package-name: one
-          # command: github-release
       - uses: actions/checkout@v2
-        if: ${{ steps.tag-release.outputs.release_created }}
+        if: ${{ steps.tag-release.outputs.releases_created }}
       - name: ONE
-        if: ${{ steps.tag-release.outputs.release_created }}
+        if: ${{ steps.tag-release.outputs.releases_created }}
         run: echo "one"
