@@ -5,6 +5,10 @@ on:
     paths:
       - 'packages/one/**'
       - '.github/workflows/one.yml'
+  pull_request:
+    paths:
+      - 'packages/one/**'
+      - '.github/workflows/one.yml'
 name: release one
 jobs:
   release:
