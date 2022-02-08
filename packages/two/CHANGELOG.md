@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/hugomrdias/mono-release/compare/two-v1.5.0...two-v2.0.0) (2022-02-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* sdddd
+
+### Features
+
+* sdddd ([df2ed8b](https://github.com/hugomrdias/mono-release/commit/df2ed8b6e987aecb2996c0a27d2dd57432879c65))
+
+
+### Bug Fixes
+
+* both ([c4e8f5d](https://github.com/hugomrdias/mono-release/commit/c4e8f5d4cf2bdea92f7e9f3d20088a8fe5f2561d))
+
 ## [1.5.0](https://github.com/hugomrdias/mono-release/compare/two-v1.4.0...two-v1.5.0) (2022-02-08)
 
 
