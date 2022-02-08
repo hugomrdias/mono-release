@@ -10,9 +10,6 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: tag-release
         with:
-          path: packages/one
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: node
           command: manifest
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.releases_created }}
