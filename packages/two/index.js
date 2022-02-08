@@ -1,3 +1,3 @@
 export function test() {
-  return '2 you'
+  return '2 asfsf'
 }
