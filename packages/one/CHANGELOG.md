@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/hugomrdias/mono-release/compare/one-v1.4.1...one-v2.0.0) (2022-02-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* sdddd
+
+### Features
+
+* sdddd ([df2ed8b](https://github.com/hugomrdias/mono-release/commit/df2ed8b6e987aecb2996c0a27d2dd57432879c65))
+
 ### [1.4.1](https://github.com/hugomrdias/mono-release/compare/one-v1.4.0...one-v1.4.1) (2022-02-08)
 
 
