@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.1](https://github.com/hugomrdias/mono-release/compare/two-v2.0.0...two-v2.0.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* bothss ([6f513b4](https://github.com/hugomrdias/mono-release/commit/6f513b48a6558a853b0e344aa74d9a526af81ea3))
+
 ## [2.0.0](https://github.com/hugomrdias/mono-release/compare/two-v1.5.0...two-v2.0.0) (2022-02-08)
 
 
