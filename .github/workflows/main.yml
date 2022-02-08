@@ -10,6 +10,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: tag-release
         with:
+          token: ${{ secrets.GH_TOKEN }}
           command: manifest
       - uses: actions/checkout@v2
         if: ${{ steps.tag-release.outputs.releases_created }}
