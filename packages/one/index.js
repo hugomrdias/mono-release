@@ -1,3 +1,3 @@
 export function one() {
-  return 'change one sassdasd'
+  return 'change one'
 }
